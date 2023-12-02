@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(white, rgb(183, 231, 255));
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #6b818c;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-item:hover {
+    background-color: #99b9c9;
+}
+
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90.4vh;
+}
+
+.sign-up {
+    text-align: center;
+    color: #6b818c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+}
+
+.sign-up h1 {
+    margin-bottom: 30px;
+}
+
+.sign-up input {
+    margin-bottom: 50px;
+    width: 300px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #6b818c;
+    color: #6b818c;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+input:focus {
+    outline: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px #6b818c;
+}
+
+.sign-up button {
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    background-color: #6b818c;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.sign-up button:hover {
+    background-color: #99b9c9;
+}
+
+::placeholder {
+    font-size: 1.1rem;
+    color: #6b818c;
+}
+
+.sign-up h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td,
+table {
+    color: #6b818c;
+    border: 1px solid #6b818c;
+}
+
+.table-h1 {
+    color: #6b818c;
+    text-align: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,27 @@
+{% extends 'usuarios/base.html' %}
+{% block conteudo %}
+<div class="container">
+    <h1 class="table-h1">Medicamentos Cadastrados</h1>
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Quantidade</th>
+            <th></th>
+        </tr>
+        {% for medicamento in medicamentos %}
+        <tr>
+            <td>{{medicamento.id}}</td>
+            <td>{{medicamento.nome}}</td>
+            <td>{{medicamento.tipo}}</td>
+            <td>{{medicamento.quantidade}}</td>
+            <td><a style="text-decoration: underline; color: #6b818c; "
+                    href="{% url 'listagem_medicamentos' id=medicamento.id %}">Comprar</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
+
+{% endblock %}
